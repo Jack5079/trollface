@@ -1,4 +1,4 @@
-import { Players, Workspace, RunService } from '@rbxts/services'
+import { Players } from '@rbxts/services'
 
 
 // //====================================================\\
@@ -59,7 +59,7 @@ new Instance('ForceField', char).Visible = false
 
 // Anti-Banish
 // ironically taken from a banisher
-const Shield = new Instance("MeshPart", Workspace)
+const Shield = new Instance("MeshPart", char.Parent)
 Shield.CanCollide = false
 Shield.Transparency = 1
 Shield.Material = Enum.Material.Neon
